@@ -1,6 +1,6 @@
-# Next.js Crash Course Project
+# Next.js based Sky Editor
 
-Project from my Next.js crash course on YouTube
+A working product editor, which illustrates the starry sky at the time of a date at a location with PDF creation (Format A4). Design optimized for desktop and mobile devices.
 
 ### Run the development server:
 
@@ -22,5 +22,5 @@ npm start
 
 ### API Routes:
 
-GET /api/articles
+GET /api/places/:place_name
 GET /api/articles/:id

@@ -1,4 +1,4 @@
-export const SkyProps = () => {
+const SkyProps = () => {
   return (
     <>
       <div>Sample Dedication</div>
@@ -9,3 +9,5 @@ export const SkyProps = () => {
     </>
   );
 };
+
+export default SkyProps;
