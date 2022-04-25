@@ -1,11 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
+import styles from "./DatePanel.module.css";
 
 const DatePanel = () => {
   return (
     <Container>
       <Row>
         <Col>
-          <select id="month" name="month">
+          <select className={styles.noborder} id="month" name="month">
             <option>month</option>
             <option value="01">January</option>
             <option value="02">February</option>
@@ -22,7 +23,7 @@ const DatePanel = () => {
           </select>
         </Col>
         <Col>
-          <select id="day" name="day">
+          <select className={styles.noborder} id="day" name="day">
             <option>day</option>
             <option value="01">01</option>
             <option value="02">02</option>
@@ -56,9 +57,9 @@ const DatePanel = () => {
             <option value="30">30</option>
             <option value="31">31</option>
           </select>
-        </Col>{" "}
+        </Col>
         <Col>
-          <select id="year" name="year">
+          <select className={styles.noborder} id="year" name="year">
             <option>year</option>
             <option value="1940">1940</option>
             <option value="1941">1941</option>

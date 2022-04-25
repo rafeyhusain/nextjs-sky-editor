@@ -1,3 +1,53 @@
-.blue {
-  color: blue;
+.c1 {
+  background-color: #000000;
+  margin: 3px;
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+.c2 {
+  background-color: #000d4f;
+  margin: 3px;
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+.c3 {
+  background-color: #1b7c72;
+  margin: 3px;
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+.c4 {
+  background-color: #dcab00;
+  margin: 3px;
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+.c5 {
+  background-color: #cc7b49;
+  margin: 3px;
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+.c6 {
+  background-color: #d15241;
+  margin: 3px;
+  width: 55px;
+  height: 55px;
+  float: left;
+}
+.tick {
+  background-image: url(/tick.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.container {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
 }

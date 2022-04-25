@@ -1,28 +1,32 @@
 import { Container, Row, Col } from "react-bootstrap";
 import DesignPanel from "../DesignPanel/DesignPanel";
 import DatePanel from "../DatePanel/DatePanel";
+import styles from "./PropPanel.module.css";
 
 const PropPanel = () => {
   return (
     <Container>
       <Row>
-        <Col>Location</Col>
+        <Col className={styles.label}><h4>Sample Editor</h4></Col>
+      </Row>
+      <Row>
+        <Col className={styles.label}>Location</Col>
       </Row>
       <Row>
         <Col>
-          <input></input>
+          <input className={styles.noborder}></input>
         </Col>
       </Row>
       <Row>
-        <Col>Dedication</Col>
+        <Col className={styles.label}>Dedication</Col>
       </Row>
       <Row>
         <Col>
-          <textarea rows="2" cols="25"></textarea>
+          <textarea className={styles.noborder} rows="2" ></textarea>
         </Col>
       </Row>
       <Row>
-        <Col>Date</Col>
+        <Col className={styles.label}>Date</Col>
       </Row>
       <Row>
         <Col>
@@ -30,11 +34,16 @@ const PropPanel = () => {
         </Col>
       </Row>
       <Row>
-        <Col>Design</Col>
+        <Col className={styles.label}>Design</Col>
       </Row>
       <Row>
         <Col>
           <DesignPanel />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <button className={styles.buttonpdf}>Generate PDF</button>
         </Col>
       </Row>
     </Container>

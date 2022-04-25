@@ -1,0 +1,17 @@
+.preview {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.centereddiv {
+  width: 80%;
+  height: 100%;
+  margin: 10px;
+  padding: 5px;
+  background: blue;
+  color: white;
+}
