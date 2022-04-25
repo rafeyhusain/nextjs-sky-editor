@@ -1,17 +1,23 @@
+import { useEffect } from 'react'
+import '../../public/celestial.min.js'
+import styles from "./SkyPreview.module.css";
+
 const SkyPreview = () => {
-  // Celestial.display({
-  //   disableAnimations: false,
-  //   form: true,
-  //   formFields: { download: true },
-  //   datapath: "../data/",
-  //   stars: { propername: true },
-  // });
+  useEffect(() => {
+    Celestial.display({
+      location: false,
+      projection: "airy",
+      datapath: "./data/",
+      planets: { show: false },
+      interactive: false,
+      controls: false,
+      width: 350
+    });
+  }, [])
 
   return (
     <>
-      <div>
-        <div id="celestial-map">celestial-map</div>
-      </div>
+      <div id="celestial-map" className={styles.celestialMap}></div>
     </>
   );
 };
